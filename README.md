@@ -1,19 +1,19 @@
-# 🎓 SDU AI Smart Assistant (Text-to-SQL)
+# ⚽ AI Football Scout & Match Predictor
 
-## 🚀 Overview
-This is a non-trivial AI-driven data analysis tool designed for SDU students. It uses an Agentic workflow to translate natural language questions into complex SQL queries to analyze university data.
+## 🌟 Overview
+This project is a non-trivial AI Agent designed for football data analysis. It combines **Machine Learning** for match prediction and **Natural Language Processing (Text-to-SQL)** for scouting players from a relational database.
 
-## 🛠 Features (Criteria: Complexity & Originality)
-- **Agentic Workflow**: The LLM acts as a database administrator, generating and executing SQL.
-- **Relational Complexity**: Queries data across 3 linked tables using SQL JOINs.
-- **Vibe-coded Analysis**: Analyzes student feedback and course difficulty, not just raw facts.
+## 🧠 Project Depth (Criteria: Complexity)
+- **Agentic Workflow**: Translates natural language into SQL queries to analyze player stats.
+- **Data Science**: Includes a Jupyter Notebook with a **Random Forest** model (Accuracy: 49.8%) for predicting match outcomes.
+- **Relational DB**: Uses 3 linked tables (Players, Stats, Market) with JOIN logic.
 
-## 📊 Database Schema
-1. **Courses**: Main course information.
-2. **Schedule**: Instructor names, timing, and locations.
-3. **VibeCheck**: Subjective difficulty levels and student comments.
+## 📊 How to Run
+1. Install dependencies: `pip install openai`
+2. Initialize the database: `python database_setup.py`
+3. Run the AI Scout: `python main.py`
 
-## 💻 How to Run
-1. Install requirements: `pip install openai`
-2. Initialize DB: Run `python database_setup.py`
-3. Launch Assistant: Run `python main.py`
+## 📈 Technical Details
+- Data sourced via Web Scraping (BeautifulSoup, cloudscraper).
+- Model: Random Forest Classifier.
+- DB: SQLite3.
